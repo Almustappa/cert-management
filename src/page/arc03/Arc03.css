@@ -1,0 +1,62 @@
+#tabMenu {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+#tabMenu input[type="radio"] {
+    display: none;
+}
+#tabMenu label {
+    display: inline-block;
+    margin: 0 0;
+    padding: 12px 12px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 1px solid transparent;
+}
+#tabMenu label:hover {
+    color: #222;
+    cursor: pointer;
+}
+#tabMenu input:checked + label {
+    color: darkblue;
+    border: 1px solid #ddd;
+    background-color: MintCream;
+}
+.tabContent {
+    display: none;
+    padding: 3px 0 0;
+    border-top: 1px solid #ddd;
+}
+.tabContent h2 {
+	font-weight: 400;
+	font-size : 12px;
+	margin-left: 11px;
+    color: #888;
+}
+#notice ul {
+    list-style: disc;
+    margin-left: 30px;
+}
+#notice ul li {
+    font-size: 16px;
+    line-height: 2.5;
+}
+#gallery ul li {
+    display: inline;
+}
+#tab1:checked ~ #notice1,
+#tab2:checked ~ #notice2,
+#tab3:checked ~ #notice3,
+#tab4:checked ~ #notice4,
+#tab5:checked ~ #notice5,
+#tab6:checked ~ #notice6,
+#tab7:checked ~ #notice7,
+#tab8:checked ~ #notice8,
+#tab9:checked ~ #notice9,
+#tab10:checked ~ #notice10,
+#tab11:checked ~ #notice11,
+#tab12:checked ~ #notice12
+{ display: block; }
